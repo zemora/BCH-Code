@@ -7,3 +7,10 @@ def divide_and_remainer(n, p):
         n ^= (p << d)
         q ^= (1 << i)
     return q, n
+
+
+def inverse(g, p):
+    """
+    Find the inverse of `g` in the extension field GF(2)/<p>.
+    `g` and `p` are integers that represents the polynomials.
+    """
